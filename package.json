@@ -1,0 +1,28 @@
+{
+  "name": "wake-up-call",
+  "version": "0.0.0",
+  "description": "Phone call alarm system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/demo.js",
+    "test": "node test.js",
+    "dev": "nodemon bin/demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://kah8br@khalidhoffman.net:/home/kah8br/nodejs/wake-up-call.git"
+  },
+  "author": "Khalid Hoffman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "request": "^2.75.0",
+    "tropo-webapi": "^1.2.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "jasmine-spec-reporter": "^2.7.0"
+  }
+}
