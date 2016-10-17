@@ -1,7 +1,6 @@
 var TropoDialer = require('./lib/tropo-dialer'),
-    TropoSession = require('./lib/tropo-session'),
+    TropoSession = require('./lib/tropo-session');
 
-    testTropoDialer = new TropoDialer();
 
 
 /**
@@ -10,10 +9,13 @@ var TropoDialer = require('./lib/tropo-dialer'),
  * @param {Function} callback
  * @param {Object} [options]
  * @param {Boolean} [options.keepAlive=false]
+ * @param {Boolean} [options.port=4000]
  */
 module.exports = function (number, callback, options) {
 
-    var testTropoSession = new TropoSession(number, {
+    var testTropoDialer = new TropoDialer(options),
+        
+        testTropoSession = new TropoSession(number, {
         start: {
             question: 'Good morning. Are you awake?',
             options: "yes, no, tired",

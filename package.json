@@ -1,6 +1,6 @@
 {
   "name": "wake-up-call",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Phone call alarm system",
   "main": "index.js",
   "scripts": {
