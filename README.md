@@ -6,6 +6,16 @@ It utilizes [Tropo's Voice API](https://www.tropo.com/) to place phone calls.
 The idea is to create automated wake up call alarm service that interacts with the recipient to provide
 a more personal and effective method of waking up.
 
+## Installation
+1. run `npm install`
+2. create a json file named `wakeup.config.json`. This file should resemble:
+```
+{
+  "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+```
+- `token` being your Tropo voice app key
+
 ## Example Usage
 
 ```
@@ -71,4 +81,3 @@ Messages must simply have one field: `message`. Ex:
     message: "A string to read to the recipient"
 }
 ```
-
